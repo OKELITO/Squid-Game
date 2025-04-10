@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: rgb(123, 130, 136);
 }
 
 .container{
@@ -9,10 +10,13 @@ body{
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-}
+    text-align: center;
+    display: flex;
+} 
 
 .container img{
-    width: 350px;
+    width: 750px;
+    border-radius: 10px;
 }
 
 .header{
@@ -48,25 +52,43 @@ body{
     color: blue;
 }
 
-.main .right{
-    width: 33%;
-    border: 2px solid black;
-    margin-top: 5px;
-    margin-bottom: 5px;
+
+/* ESTILO DEL NAV O MENU */
+.menu{    
+    background-color: aquamarine; 
+    margin: 0;
+    padding: 10px;
+    justify-content: center;
+    display:flex;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    display: inline;
+    padding: 10px;
+}
+.menu ul li a{
+    color: brown;
+    text-decoration: none;
+    font-size: 22px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menu ul li a:hover{
+    color: rgb(67, 67, 200);
 }
 
-.main .left{
-    width: 33%;
-    border: 2px solid black;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center;
+/* ORDENAR SECCIONES */
+.section-menu{
+    display: none;
+    padding: 20px;
+    border: 1px solid black;
+    margin-top: 10px;
+    box-sizing: border-box;
+    background-color: rgb(red, green, blue);
 }
-
-.main .center{
-    width: 33%;
-    border: 2px solid black;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center;
+:target{
+    display: block;
 }
